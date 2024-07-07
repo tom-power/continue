@@ -11,6 +11,7 @@ import {
   vscBackground,
   vscEditorBackground,
   vscForeground,
+  vscInputForeground,
 } from "..";
 import { RootState } from "../../redux/store";
 import { getFontSize } from "../../util";
@@ -51,6 +52,7 @@ const StyledMarkdown = styled.div<{
     background-color: ${vscEditorBackground};
     font-size: ${getFontSize() - 2}px;
     font-family: var(--vscode-editor-font-family);
+    color: ${vscForeground};
   }
 
   code:not(pre > code) {
@@ -75,7 +77,7 @@ const StyledMarkdown = styled.div<{
   font-size: ${(props) => props.fontSize || getFontSize()}px;
   padding-left: 8px;
   padding-right: 8px;
-  color: ${vscForeground};
+  color: ${vscInputForeground};
 
   p,
   li,
