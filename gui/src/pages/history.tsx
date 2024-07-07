@@ -15,7 +15,7 @@ import {
   lightGray,
   vscBackground,
   vscBadgeBackground,
-  vscForeground,
+  vscInputForeground,
   vscInputBackground,
 } from "../components";
 import HeaderButtonWithText from "../components/HeaderButtonWithText";
@@ -33,7 +33,7 @@ const SearchBar = styled.input`
   margin: 8px auto;
   display: block;
   background-color: ${vscInputBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   &:focus {
     border: 0.5px solid ${vscBadgeBackground};
     outline: none;
@@ -133,7 +133,10 @@ function TableRow({
             navigate("/");
           }}
         >
-          <div className="text-md w-100">
+          <div 
+            className="text-md w-100"
+            style={{ color: vscInputForeground }}
+          >
             {editing ? (
               <Input
                 type="text"
@@ -291,7 +294,10 @@ function History() {
       <div
         ref={stickyHistoryHeaderRef}
         className="sticky top-0"
-        style={{ backgroundColor: vscBackground }}
+        style={{ 
+          backgroundColor: vscBackground,
+          color: vscInputForeground
+        }}
       >
         <div
           className="items-center flex m-0 p-0"
