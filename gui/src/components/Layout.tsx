@@ -10,7 +10,7 @@ import styled from "styled-components";
 import {
   CustomScrollbarDiv,
   defaultBorderRadius,
-  vscForeground,
+  vscInputForeground,
   vscInputBackground,
 } from ".";
 import { IdeMessengerContext } from "../context/IdeMessenger";
@@ -50,11 +50,11 @@ const BottomMessageDiv = styled.div<{ displayOnBottom: boolean }>`
   margin: 8px;
   margin-top: 0;
   background-color: ${vscInputBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   border-radius: ${defaultBorderRadius};
   padding: 12px;
   z-index: 100;
-  box-shadow: 0px 0px 2px 0px ${vscForeground};
+  box-shadow: 0px 0px 2px 0px ${vscInputForeground};
   max-height: 35vh;
 `;
 

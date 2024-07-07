@@ -12,7 +12,7 @@ import {
   TextArea,
   lightGray,
   vscBackground,
-  vscForeground,
+  vscInputForeground,
   vscInputBackground,
 } from "../components";
 import InfoHover from "../components/InfoHover";
@@ -83,7 +83,7 @@ const ConfigJsonButton = styled(Button)`
   margin-left: auto;
   margin-right: 4px;
   background-color: transparent;
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   border: 1px solid ${lightGray};
   &:hover {
     background-color: ${lightGray};

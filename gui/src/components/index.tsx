@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { getFontSize, isJetBrains } from "../util";
 
 export const VSC_INPUT_BACKGROUND_VAR = "--vscode-input-background";
+export const VSC_INPUT_FOREGROUND_VAR = "--vscode-input-foreground";
 export const VSC_BACKGROUND_VAR = "--vscode-sideBar-background";
 export const VSC_FOREGROUND_VAR = "--vscode-editor-foreground";
 export const VSC_BUTTON_BACKGROUND_VAR = "--vscode-button-background";
@@ -21,6 +22,7 @@ export const VSC_BADGE_FOREGROUND_VAR = "--vscode-badge-foreground";
 export const VSC_SIDEBAR_BORDER_VAR = "--vscode-sideBar-border";
 
 export const VSC_THEME_COLOR_VARS = [
+  VSC_INPUT_FOREGROUND_VAR,
   VSC_INPUT_BACKGROUND_VAR,
   VSC_BACKGROUND_VAR,
   VSC_FOREGROUND_VAR,
@@ -43,6 +45,7 @@ export const lightGray = "#646464";
 export const greenButtonColor = "#1bbe84";
 
 export const vscInputBackground = `var(${VSC_INPUT_BACKGROUND_VAR}, rgb(45 45 45))`;
+export const vscInputForeground = `var(${VSC_INPUT_FOREGROUND_VAR}, #fff)`;
 export const vscQuickInputBackground = `var(${VSC_QUICK_INPUT_BACKGROUND_VAR}, ${VSC_INPUT_BACKGROUND_VAR}, rgb(45 45 45))`;
 export const vscBackground = `var(${VSC_BACKGROUND_VAR}, rgb(30 30 30))`;
 export const vscForeground = `var(${VSC_FOREGROUND_VAR}, #fff)`;
@@ -125,7 +128,7 @@ export const Button = styled.button`
   border-radius: ${defaultBorderRadius};
 
   border: none;
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   background-color: ${vscButtonBackground};
 
   &:disabled {
@@ -144,7 +147,7 @@ export const SecondaryButton = styled.button`
   border-radius: ${defaultBorderRadius};
 
   border: 1px solid ${vscInputBorder};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   background-color: ${vscBackground};
 
   &:disabled {
@@ -201,7 +204,7 @@ export const TextArea = styled.textarea`
   height: auto;
   width: calc(100% - 32px);
   background-color: ${vscInputBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   z-index: 1;
   border: 1px solid transparent;
 
@@ -254,7 +257,7 @@ export const Input = styled.input`
   outline: 1px solid ${lightGray};
   border: none;
   background-color: ${vscBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
 
   &:focus {
     background: ${vscInputBackground};
@@ -274,7 +277,7 @@ export const NumberInput = styled.input.attrs({ type: "number" })`
   outline: 1px solid ${lightGray};
   border: none;
   background-color: ${vscBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
 
   &:focus {
     background: ${vscInputBackground};
@@ -289,7 +292,7 @@ export const Select = styled.select`
   outline: 1px solid ${lightGray};
   border: none;
   background-color: ${vscBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
 `;
 
 export const Label = styled.label<{ fontSize?: number }>`

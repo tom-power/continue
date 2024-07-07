@@ -7,7 +7,8 @@ import {
   parseColorForHex,
   vscBackground,
   vscFocusBorder,
-  vscForeground,
+  vscInputForeground,
+  vscInputBackground,
 } from "..";
 
 const ScreenCover = styled.div`
@@ -27,7 +28,7 @@ const DialogContainer = styled.div`
 `;
 
 const Dialog = styled.div`
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   background-color: ${vscBackground};
   border-radius: ${defaultBorderRadius};
   display: flex;
@@ -36,6 +37,25 @@ const Dialog = styled.div`
   margin: auto;
   word-wrap: break-word;
   // overflow: hidden;
+`;
+
+const TextArea = styled.textarea`
+  border: 1px solid #ccc;
+  border-radius: ${defaultBorderRadius};
+  padding: 8px;
+  outline: 1px solid black;
+  resize: none;
+  background-color: ${vscInputBackground};
+  color: ${vscInputForeground};
+
+  &:focus {
+    outline: 1px solid ${vscInputForeground};
+  }
+`;
+
+const P = styled.p`
+  color: ${vscInputForeground};
+  margin: 8px auto;
 `;
 
 const TextDialog = (props: {

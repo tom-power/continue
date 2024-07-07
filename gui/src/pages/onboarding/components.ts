@@ -3,12 +3,13 @@ import {
   Button,
   defaultBorderRadius,
   lightGray,
-  vscForeground,
+  vscButtonBackground,
+  vscInputForeground,
 } from "../../components";
 
 export const StyledButton = styled(Button)<{ blurColor?: string }>`
   background-color: transparent;
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   border: 1px solid ${lightGray}cc;
 
   &:hover {

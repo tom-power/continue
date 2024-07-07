@@ -33,7 +33,7 @@ import styled from "styled-components";
 import {
   defaultBorderRadius,
   lightGray,
-  vscForeground,
+  vscInputForeground,
   vscListActiveBackground,
   vscListActiveForeground,
   vscQuickInputBackground,
@@ -145,7 +145,7 @@ const ItemDiv = styled.div`
   padding: 0.2rem 0.4rem;
   text-align: left;
   width: 100%;
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   cursor: pointer;
 
   &.is-selected {
@@ -162,7 +162,7 @@ const QueryInput = styled.textarea`
   padding: 0.2rem 0.4rem;
   width: 240px;
 
-  color: ${vscForeground};
+  color: ${vscInputForeground};
 
   &:focus {
     outline: none;

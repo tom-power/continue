@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { defaultBorderRadius, vscBackground, vscForeground } from ".";
+import { defaultBorderRadius, vscBackground, vscInputForeground } from ".";
 import { CheckIcon } from "@heroicons/react/24/outline";
 
 interface CheckDivProps {
@@ -17,13 +17,13 @@ const StyledDiv = styled.div<{ checked: boolean }>`
   padding: 0.5rem;
   border-radius: ${defaultBorderRadius};
   cursor: pointer;
-  border: 1px solid ${vscForeground};
+  border: 1px solid ${vscInputForeground};
 
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   background-color: ${vscBackground};
 
   &:hover {
-    background-color: ${vscForeground};
+    background-color: ${vscInputForeground};
     color: ${vscBackground};
   }
   width: fit-content;

@@ -13,7 +13,7 @@ import {
   defaultBorderRadius,
   lightGray,
   vscBackground,
-  vscForeground,
+  vscInputForeground,
   vscInputBackground,
   vscListActiveBackground,
   vscListActiveForeground,
@@ -76,7 +76,7 @@ const StyledListboxButton = styled(Listbox.Button)`
   grid-template-columns: 1fr auto;
   align-items: center;
 
-  color: ${vscForeground};
+  color: ${vscInputForeground};
 
   padding: 4px 8px;
 

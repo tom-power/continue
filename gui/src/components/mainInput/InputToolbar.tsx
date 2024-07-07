@@ -10,7 +10,7 @@ import {
   lightGray,
   vscBadgeBackground,
   vscBadgeForeground,
-  vscForeground,
+  vscInputForeground,
   vscInputBackground,
 } from "..";
 import { selectUseActiveFile } from "../../redux/selectors";
@@ -52,7 +52,7 @@ const EnterButton = styled.div<{ offFocus: boolean }>`
   background-color: ${(props) =>
     props.offFocus ? undefined : lightGray + "33"};
   border-radius: ${defaultBorderRadius};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
 
   &:hover {
     background-color: ${vscBadgeBackground};

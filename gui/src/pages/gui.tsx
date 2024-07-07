@@ -25,7 +25,7 @@ import {
   defaultBorderRadius,
   lightGray,
   vscBackground,
-  vscForeground,
+  vscInputForeground,
 } from "../components";
 import StepContainer from "../components/gui/StepContainer";
 import TimelineItem from "../components/gui/TimelineItem";
@@ -118,7 +118,7 @@ const NewSessionButton = styled.div`
 
   &:hover {
     background-color: ${lightGray}33;
-    color: ${vscForeground};
+    color: ${vscInputForeground};
   }
 
   cursor: pointer;

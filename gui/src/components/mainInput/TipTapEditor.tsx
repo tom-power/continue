@@ -20,7 +20,7 @@ import {
   defaultBorderRadius,
   lightGray,
   vscBadgeBackground,
-  vscForeground,
+  vscInputForeground,
   vscInputBackground,
   vscInputBorder,
   vscInputBorderFocus,
@@ -65,7 +65,7 @@ const InputBoxDiv = styled.div`
   height: auto;
   width: calc(100% - 18px);
   background-color: ${vscInputBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   z-index: 1;
   border: 0.5px solid ${vscInputBorder};
   outline: none;
@@ -92,7 +92,7 @@ const HoverDiv = styled.div`
   left: 0;
   opacity: 0.5;
   background-color: ${vscBadgeBackground};
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   z-index: 100;
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@ const HoverTextDiv = styled.div`
   height: 100%;
   top: 0;
   left: 0;
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   z-index: 100;
   display: flex;
   align-items: center;

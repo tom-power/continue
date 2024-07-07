@@ -8,6 +8,7 @@ import {
   lightGray,
   vscBackground,
   vscForeground,
+  vscInputForeground,
 } from "../components";
 import KeyboardShortcutsDialog from "../components/dialogs/KeyboardShortcuts";
 import { IdeMessengerContext } from "../context/IdeMessenger";
@@ -28,7 +29,7 @@ const IconDiv = styled.div<{ backgroundColor?: string }>`
   padding: 12px;
 
   & > a {
-    color: ${vscForeground};
+    color: ${vscInputForeground};
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -46,7 +47,7 @@ const TutorialButton = styled(Button)`
   margin-left: auto;
   margin-right: 12px;
   background-color: transparent;
-  color: ${vscForeground};
+  color: ${vscInputForeground};
   border: 1px solid ${lightGray};
   &:hover {
     background-color: ${lightGray};
